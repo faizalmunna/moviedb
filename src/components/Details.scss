@@ -1,0 +1,21 @@
+.movie_details{
+    h6{
+        background-color:var(--color-s-text) ;
+        color:var(--color-surface);
+        padding:10px 15px;
+    }
+    .col_single{
+        width:50%;
+        float: left;
+        padding-right: 30px;
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            padding-right:0px;
+        }
+    }
+}
+.movie_card_title{
+    color:var(--color-surface);
+    padding:15px;
+    margin-top: 10px;
+}

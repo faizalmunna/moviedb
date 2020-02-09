@@ -1,0 +1,63 @@
+.body_component {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: var(--color-s-bg);
+  input {
+    border: none;
+    background-color: var(--color-primary-text);
+    color: var(--color-surface);
+  }
+  .movie_card_wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    .movie_card {
+      &> div{
+        border-radius: 6.8px;
+        overflow: hidden;
+        -webkit-box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+        box-shadow: 13px 10px 17px 0px rgba(0,0,0,0.75);
+        transition: 0.3s;
+        opacity: .55;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(111,111,111,0) 16%, rgba(0,0,0,0.5088410364145659) 42%, rgba(0,0,0,1) 70%, rgba(2,0,36,1) 100%);
+        &:hover{
+          opacity:1;
+          transition: 0.3s;
+        }
+      }
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      width:16.66667%;
+      padding: 10px;
+      flex-wrap: wrap;
+      
+      .movie_card_title {
+        position: absolute;
+        font-size: 14px;
+        bottom: 0;
+        font-weight: bold;
+        padding: 1rem;
+        height: 30%;
+        color: var(--color-surface);
+        width: 100%;
+        padding-top:20%;
+        margin: 0;
+      }
+      @media only screen and (max-width: 1199px) {
+        width:16.66667%;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 33.33%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 50%;
+      }
+    }
+  }
+}

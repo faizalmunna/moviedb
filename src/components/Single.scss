@@ -1,0 +1,43 @@
+#tooltip_custom{
+    background-color: var(--color-surface) !important;
+    color:var(--tooltip-grey);
+    min-width:450px;
+    min-height:250px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    opacity: 1;
+    padding: 0;
+    .tooltip_title{
+        width:100%;
+        color:var(--tooltip-title);
+        padding:15px;
+        font-size: 1.45rem;
+        font-weight:500;
+    }
+    .tooltip_year{
+        color:var(--tooltip-grey);
+        font-weight:100;
+    }
+    .tooltip_imdb{
+        color:var(--tool-tip-yellow)
+    }
+    .tooltip_body{
+        padding:15px;
+        width: 100%;
+    }
+    .tooltip_footer{
+        width:100%;
+        height:60px;
+        line-height:60px;
+        text-align: center;
+        background-color: var(--tooltip-title);
+        color:var(--color-surface);
+        margin-bottom:-30px;
+        overflow: hidden;
+    }
+    @media only screen and (max-width: 600px) {
+        min-width:350px;
+    }
+}

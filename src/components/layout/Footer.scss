@@ -1,0 +1,16 @@
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: var(--color-primary-bg);
+    color :var(--tooltip-title); 
+    h6{
+        text-align: center;
+        width: 100%;
+        a{
+            color :var(--tooltip-title);
+            font-size:14px;
+        }
+    }
+}
